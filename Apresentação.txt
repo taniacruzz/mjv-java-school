@@ -1,0 +1,3 @@
+Apresentação : Meu nome é Tânia, tenho 32 anos, sou geóloga e quero migrar
+de carreira para a área de programação. 
+Minha parte preferida da programação é definitivamente backend.
