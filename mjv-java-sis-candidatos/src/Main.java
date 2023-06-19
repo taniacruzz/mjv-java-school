@@ -13,7 +13,7 @@ public class Main {
 
         // Formatar String para ser usado como Date
         SimpleDateFormat dateFormatJoao = new SimpleDateFormat("dd/MM/yyyy");
-        Date nascimentoJoao = dateFormatJoao.parse("01/11/1983");
+        Date nascimentoJoao = dateFormatJoao.parse("01/09/1979");
         Cadastro cadastroJoao = new Cadastro(
             "Joao Gonçalves", 
             "111.111.111-11",
@@ -35,12 +35,12 @@ public class Main {
             true,
             3000.00,
             5000.00,
-            "Experiente na area, conheço muito bem circuitos e código elétricos"
+            "Experiente na area"
         );
         
         // Formatar String para ser usado como Date
         SimpleDateFormat dateFormatKarina = new SimpleDateFormat("dd/MM/yyyy");
-        Date nascimentoKarina = dateFormatKarina.parse("01/11/1983");
+        Date nascimentoKarina= dateFormatKarina.parse("01/11/1983");
         Cadastro cadastroKarina = new Cadastro(
             "Karina Santos", 
             "222.222.222-22",
@@ -62,11 +62,39 @@ public class Main {
             true,
             5000.00,
             7000.00,
-            "Autodidata, experiência em Java"
+            "Autodidata"
+        );
+
+        // Formatar String para ser usado como Date
+        SimpleDateFormat dateFormatFrancine = new SimpleDateFormat("dd/MM/yyyy");
+        Date nascimentoFrancine = dateFormatFrancine.parse("28/05/1990");
+        Cadastro cadastroFrancine = new Cadastro(
+            "Francine Cruz", 
+            "333.333.333-33",
+            nascimentoFrancine,
+            Sexo.Feminino,
+            "Rua Bairiri",
+            "1020",
+            "Boa Vista",
+            "apto. 65",
+            "Belém",
+            "Pará",
+            "francine@emailFrancine.com",
+            39344487,
+            98973113,
+            true,
+            "Designer",
+            "Mercado Livre",
+            8000.00,
+            true,
+            8500.00,
+            10000.00,
+            "Domínio de photoshop"
         );
 
         linhas.add(cadastroJoao.buildString(cadastroJoao));
         linhas.add(cadastroKarina.buildString(cadastroKarina));
+        linhas.add(cadastroFrancine.buildString(cadastroFrancine));
 
         Arquivo arquivo = new Arquivo("cadastro.csv", "Arquivos");
         File file = arquivo.criarArquivo(arquivo);

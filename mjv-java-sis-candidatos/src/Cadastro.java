@@ -86,26 +86,26 @@ public class Cadastro {
     public String buildString(Cadastro cadastro) {
         StringBuilder conteudo = new StringBuilder();
         
-        conteudo.append(nome + ",");
-        conteudo.append(cpf + ",");
-        conteudo.append(dataNascimento + ",");
-        conteudo.append(sexo + ",");
-        conteudo.append(logradouro + ",");
-        conteudo.append(numero + ",");
-        conteudo.append(bairro + ",");
-        conteudo.append(complemento + ",");
-        conteudo.append(cidade + ",");
-        conteudo.append(estado + ",");
-        conteudo.append(email + ",");
-        conteudo.append(telefone + ",");
-        conteudo.append(celular + ",");
-        conteudo.append(celularWhats + ",");
-        conteudo.append(profissao + ",");
-        conteudo.append(empresa + ",");
-        conteudo.append(salario + ",");
-        conteudo.append(empregoAtual + ",");
-        conteudo.append(pretensaoMinima + ",");
-        conteudo.append(pretensaoMaxima + ",");
+        conteudo.append(nome + ";");
+        conteudo.append(cpf + ";");
+        conteudo.append(dataNascimento + ";");
+        conteudo.append(sexo + ";");
+        conteudo.append(logradouro + ";");
+        conteudo.append(numero + ";");
+        conteudo.append(bairro + ";");
+        conteudo.append(complemento + ";");
+        conteudo.append(cidade + ";");
+        conteudo.append(estado + ";");
+        conteudo.append(email + ";");
+        conteudo.append(telefone + ";");
+        conteudo.append(celular + ";");
+        conteudo.append(celularWhats + ";");
+        conteudo.append(profissao + ";");
+        conteudo.append(empresa + ";");
+        conteudo.append(salario + ";");
+        conteudo.append(empregoAtual + ";");
+        conteudo.append(pretensaoMinima + ";");
+        conteudo.append(pretensaoMaxima + ";");
         conteudo.append(habilidades);
 
         return conteudo.toString();
