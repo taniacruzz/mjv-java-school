@@ -19,7 +19,7 @@ public class Arquivo {
         this.caminhoArquivo = caminhoArquivo;
     }
     
-    // Métodos
+    // Métodos getters
     public String getNomeArquivo() {
         return nomeArquivo;
     }
